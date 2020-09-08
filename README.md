@@ -7,25 +7,25 @@ Bellow you will find a brief description of what should be included in the POST 
 
 
 ### /auth (POST)
-provide “username” (text)
+provide “username” (text),
 provide ”password” (text)
 
 ### /single-upload (POST)
-upload a single “image” (file)
-provide a “title” (text) and “description” (text)
-indicate whether the image is “private” (text, either “T” or”F”)
+upload a single “image” (file),
+provide a “title” (text) and “description” (text),
+indicate whether the image is “private” (text, either “T” or”F”),
 
 ### /bulk-upload (POST)
-upload a list of “image” files
+upload a list of “image” files,
 indicate whether the images should be “private” (text, either “T” or”F”)
 
 ### /leave-review (POST)
-indicate the ”image_id” (Int) of the image to be reviewed
-provide a “star_rating” (Int 1-5)
+indicate the ”image_id” (Int) of the image to be reviewed,
+provide a “star_rating” (Int 1-5),
 provide a “review” (text)
 
 ### /sign-up (POST)
-provide “username” (text)
+provide “username” (text),
 provide ”password” (text)
 
 
