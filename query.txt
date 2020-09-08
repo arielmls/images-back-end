@@ -1,0 +1,29 @@
+#ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yourpassword';
+
+CREATE DATABASE image_repository;
+USE image_repository2;
+
+CREATE TABLE images (
+	image_id int NOT NULL AUTO_INCREMENT,
+    title varchar(255),
+    description varchar(1024),
+    image_path varchar(1024),
+    account_id int(11),
+    PRIMARY KEY (image_id)
+);
+
+CREATE TABLE accounts (
+  account_id int NOT NULL AUTO_INCREMENT,
+  username varchar(50) NOT NULL,
+  password varchar(255) NOT NULL,
+  PRIMARY KEY (account_id)
+); 
+
+CREATE TABLE reviews (
+review_id int NOT NULL AUTO_INCREMENT,
+account_id int NOT NULL,
+image_id int NOT NULL,
+star_rating int(1) NOT NULL,
+review varchar(1024),
+PRIMARY KEY (review_id)
+);
